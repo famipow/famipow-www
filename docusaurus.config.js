@@ -151,11 +151,11 @@ const config = {
             items: [
               {
                 label: 'Contact',
-                to: '/legal/contact',
+                to: '/contact',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Legal',
+                to: '/legal/',
               },
             ],
           },

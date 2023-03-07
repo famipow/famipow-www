@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Legal Information
 description: company address and tax id
 hide_table_of_contents: true
 ---
