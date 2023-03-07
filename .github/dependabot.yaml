@@ -1,0 +1,33 @@
+version: 2
+
+updates:
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "main"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "*"
+        dependency-type: "production"
+    # ignore:
+      # - dependency-name: "@types/react"
+    open-pull-requests-limit: 0  
+    labels:
+      - "Javascript dependencies"
+      - "production"
+      - "triage-board"
+
+  - package-ecosystem: "docker"
+    directory: "/docker"
+    schedule:
+      interval: "daily"
+    commit-message:
+      # Prefix all commit messages with "[docker] " (no colon, but a trailing whitespace)
+      prefix: "[docker] "
+

@@ -1,0 +1,41 @@
+---
+repo:
+- '*'
+
+config/github:
+- ['.github/*', '.github/**/*']
+
+dependencies:
+- build.sbt
+- pom.xml
+- requirements.txt
+- package.json
+
+docker:
+- Dockerfile
+
+documentation:
+- '*.md'
+- '**/*.md'
+
+frontend:
+- src/*
+- src/**/*
+
+javascript:
+- '**/*.js'
+- package.json
+
+licenses:
+- LICENSES/*
+- LICENSES/**/*
+
+python:
+- requirements.txt
+- app/**/*.py
+- '**/*.py'
+
+scala:
+- build.sbt
+- pom.xml
+- src/**/*.scala
