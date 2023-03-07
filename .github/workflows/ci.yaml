@@ -4,23 +4,19 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths-ignore:
-      - '**.md'
       - AUTHORS
       - README.md
-      - doc/**
       - .github/**
-      - '!.github/workflows/build-docker.yaml'
+      - '!.github/workflows/ci.yaml'
 
   push:
     branches:
       - main
     paths-ignore:
-      - '**.md'
       - AUTHORS
       - README.md
-      - doc/**
       - .github/**
-      - '!.github/workflows/build-docker.yaml'
+      - '!.github/workflows/ci.yaml'
 
   workflow_dispatch:
 
