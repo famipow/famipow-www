@@ -8,7 +8,7 @@ COPY . ./
 RUN yarn install --frozen-lockfile
 RUN yarn build
 
-FROM nginxinc/nginx-unprivileged:1.21.6
+FROM nginxinc/nginx-unprivileged:1.23.3
 
 ENV PORT 8080
 ENV HOST 0.0.0.0
