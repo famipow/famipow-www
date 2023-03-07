@@ -10,21 +10,32 @@ dependencies:
 - pom.xml
 - requirements.txt
 - package.json
+- yarn.lock
+- package-lock.json
 
 docker:
 - Dockerfile
 
 documentation:
 - '*.md'
-- '**/*.md'
+- '*.mdx'
+- docs/*
+- docs/**/*
 
 frontend:
 - src/*
 - src/**/*
 
+blog:
+- blog/*
+- blog/**/*
+
 javascript:
+- '*.js'
 - '**/*.js'
 - package.json
+- yarn.lock
+- package-lock.json
 
 licenses:
 - LICENSES/*
