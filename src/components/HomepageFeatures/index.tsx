@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'DevOps & Cloud',
-    Svg: require('@site/static/img/canvas_devops.svg').default,
+    Svg: require('@site/static/img/canva_devops.svg').default,
     description: (
       <>
         Docker, AWS, Azure, baremetal, Kubernetes, Helm, Jenkins, Terraform, Ansible, etc.
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Powered by Linux',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/canva_linux.svg').default,
     description: (
       <>
         Debian, Ubuntu, RedHat
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Infrastracture & Deployment',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/canva_infrastructure.svg').default,
     description: (
       <>
         We are a company specialized in infrastructure and systems, with expertise in Linux Debian/Ubuntu, Ansible, Terraform, CI/CD, networks, security and more.
